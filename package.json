@@ -3,18 +3,34 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.6",
+    "cron-parser": "^2.11.0",
+    "cronstrue": "^1.66.0",
+    "dateformat": "^3.0.3",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "uuid": "^3.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts build && firebase deploy"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "quotes": [
+        2,
+        "single",
+        {
+          "avoidEscape": true
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -27,5 +43,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "jest-enzyme": "^7.0.2",
+    "prettier-eslint": "^8.8.2",
+    "react-test-renderer": "^16.8.6"
   }
 }

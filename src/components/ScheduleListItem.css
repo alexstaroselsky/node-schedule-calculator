@@ -1,0 +1,9 @@
+.schedule-list-item {
+  padding-left: 0;
+  list-style: none;
+}
+
+.schedule-list-item-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
